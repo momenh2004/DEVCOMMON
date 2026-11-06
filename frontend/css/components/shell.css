@@ -45,3 +45,7 @@
   background: var(--dc-bg);
   border-bottom: 1px solid var(--dc-border);
 }
+.sidebar-link.disabled {
+  opacity: .4;
+  pointer-events: none;
+}
