@@ -26,3 +26,25 @@
   --bs-list-group-color: var(--dc-text);
   --bs-list-group-action-hover-bg : var(--dc-bg);
 }
+
+.accordion {
+  --bs-accordion-bg: var(--dc-surface);
+  --bs-accordion-color: var(--dc-text);
+  --bs-accordion-border-color: var(--dc-border);
+  --bs-accordion-btn-color: var(--dc-text);
+  --bs-accordion-btn-bg: var(--dc-surface);
+  --bs-accordion-active-color: var(--dc-text);
+  --bs-accordion-active-bg: var(--dc-surface);
+  --bs-accordion-btn-focus-box-shadow: 0 0 0 .25rem rgba(71, 123, 250, .25);
+}
+
+.form-check-input:checked {
+  background-color: var(--dc-blue);
+  border-color: var(--dc-blue);
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--dc-blue);
+  box-shadow: 0 0 0 .25rem rgba(71, 123, 250, .25);
+}
