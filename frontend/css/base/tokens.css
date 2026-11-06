@@ -5,8 +5,9 @@
   --dc-text: #F3F5FA;
   --dc-text-muted: #AAB3C5;
   --dc-blue: #477BFA;
-  --dc-purple: #9457F5;
-  --dc-gradient: linear-gradient(135deg, var(--dc-blue), var(--dc-purple));
+  --dc-blue-deep: #3A63D8;
+  --dc-gradient: linear-gradient(135deg, var(--dc-blue), var(--dc-blue-deep));
+  --bs-body-font-family: "DM Sans", system-ui, sans-serif;
 }
 
 [data-bs-theme="dark"] {

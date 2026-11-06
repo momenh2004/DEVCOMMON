@@ -18,10 +18,7 @@
 
 .brand {
   font-weight: 700;
-  background: var(--dc-gradient);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  color: var(--dc-text);
 }
 
 .nav-label {
@@ -33,7 +30,7 @@
 
 .sidebar-link {
   display: block;
-  padding: .45rem .75rem;
+  padding: .5rem .75rem;
   border-radius: .5rem;
   color: var(--dc-text-muted);
   text-decoration: none;
