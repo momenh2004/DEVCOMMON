@@ -1,0 +1,43 @@
+USE devcommon;
+
+CREATE TABLE tags (
+  id   INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(30) NOT NULL UNIQUE
+);
+
+CREATE TABLE post_tags (
+  post_id INT UNSIGNED NOT NULL,
+  tag_id  INT UNSIGNED NOT NULL,
+  PRIMARY KEY (post_id, tag_id),
+  FOREIGN KEY (post_id) REFERENCES posts(id) ON DELETE CASCADE,
+  FOREIGN KEY (tag_id)  REFERENCES tags(id)  ON DELETE CASCADE
+);
+
+CREATE TABLE likes (
+  user_id    INT UNSIGNED NOT NULL,
+  post_id    INT UNSIGNED NOT NULL,
+  created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (user_id, post_id),
+  FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
+  FOREIGN KEY (post_id) REFERENCES posts(id) ON DELETE CASCADE
+);
+
+CREATE TABLE follows (
+  follower_id INT UNSIGNED NOT NULL,
+  followed_id INT UNSIGNED NOT NULL,
+  created_at  TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (follower_id, followed_id),
+  FOREIGN KEY (follower_id) REFERENCES users(id) ON DELETE CASCADE,
+  FOREIGN KEY (followed_id) REFERENCES users(id) ON DELETE CASCADE
+);
+
+DELIMITER //
+CREATE TRIGGER follows_no_self
+BEFORE INSERT ON follows
+FOR EACH ROW
+BEGIN
+  IF NEW.follower_id = NEW.followed_id THEN
+    SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'A user cannot follow themselves';
+  END IF;
+END//
+DELIMITER ;
