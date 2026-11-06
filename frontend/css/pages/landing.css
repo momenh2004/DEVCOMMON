@@ -1,0 +1,21 @@
+section[id] {
+  scroll-margin-top: 80px;
+}
+
+.hero-placeholder {
+  aspect-ratio: 3 / 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--dc-border);
+  border-radius: 8px;
+  background: repeating-linear-gradient(
+    45deg,
+    var(--dc-surface),
+    var(--dc-surface) 12px,
+    var(--dc-bg) 12px,
+    var(--dc-bg) 24px
+  );
+  color: var(--dc-text-muted);
+  font-family: monospace;
+}
