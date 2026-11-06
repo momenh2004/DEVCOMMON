@@ -1,0 +1,21 @@
+.nav-pills {
+  --bs-nav-link-color: var(--dc-text-muted);
+  --bs-nav-link-hover-color: var(--dc-text);
+  --bs-nav-pills-link-active-bg: var(--dc-blue);
+  --bs-nav-pills-link-active-color: #fff;
+}
+
+.dropdown-menu {
+  --bs-dropdown-bg: var(--dc-surface);
+  --bs-dropdown-border-color: var(--dc-border);
+  --bs-dropdown-link-active-bg: var(--dc-blue);
+}
+
+.pagination {
+  --bs-pagination-bg: var(--dc-surface);
+  --bs-pagination-border-color: var(--dc-border);
+  --bs-pagination-color: var(--dc-text);
+  --bs-pagination-active-bg: var(--dc-blue);
+  --bs-pagination-active-border-color: var(--dc-blue);
+  --bs-pagination-hover-bg: var(--dc-bg);
+}
