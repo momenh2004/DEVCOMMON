@@ -1,0 +1,9 @@
+.avatar-lg {
+  width: 96px;
+  height: 96px;
+}
+
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+}

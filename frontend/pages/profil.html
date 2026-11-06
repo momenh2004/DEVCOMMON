@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Profile - DEVCOMMON</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/base/tokens.css" rel="stylesheet">
+  <link href="../css/components/shell.css" rel="stylesheet">
+  <link href="../css/pages/feed.css" rel="stylesheet">
+  <link href="../css/pages/profile.css" rel="stylesheet">
+</head>
+<body>
+<div class="d-flex">
+
+  <aside class="shell-sidebar">
+    <div class="offcanvas-lg offcanvas-start" tabindex="-1" id="sidebar">
+      <div class="offcanvas-header">
+        <span class="brand fs-4">DEVCOMMON</span>
+        <button type="button" class="btn-close d-lg-none" data-bs-dismiss="offcanvas" data-bs-target="#sidebar"></button>
+      </div>
+      <div class="offcanvas-body flex-column">
+        <div class="nav-label">SOCIAL</div>
+        <a class="sidebar-link active" href="home.html">Home</a>
+        <a class="sidebar-link" href="#">Discuss</a>
+        <a class="sidebar-link" href="#">Communities</a>
+        <a class="sidebar-link" href="#">Explore</a>
+
+        <div class="nav-label">COLLABORATION</div>
+        <a class="sidebar-link" href="#">Solve</a>
+        <a class="sidebar-link" href="#">Projects</a>
+        <a class="sidebar-link" href="#">Workspace</a>
+
+        <div class="nav-label">PERSONAL</div>
+        <a class="sidebar-link" href="#">Messages</a>
+        <a class="sidebar-link" href="#">Notifications</a>
+        <a class="sidebar-link" href="profil.html">My Profile</a>
+        <a class="sidebar-link" href="#">Settings</a>
+      </div>
+    </div>
+  </aside>
+
+  <div class="flex-grow-1" style="min-width:0">
+
+    <header class="topbar d-flex align-items-center gap-2 px-3 py-2">
+      <button class="btn btn-outline-secondary d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#sidebar">Menu</button>
+      <input class="form-control" style="max-width:28rem" type="search" placeholder="Search DEVCOMMON">
+      <div class="ms-auto d-flex gap-2">
+        <button class="btn btn-outline-secondary">Alerts</button>
+        <button class="btn btn-outline-secondary">Messages</button>
+        <button class="btn btn-outline-secondary"></button>
+        <button class="btn btn-gradient" data-bs-toggle="modal" data-bs-target="#newPostModal">New post</button>
+      </div>
+    </header>
+
+    <main class="p-4">
+      <div class="row g-4">
+
+        <aside class="col-12 col-lg-4">
+          <div class="card p-4 text-center">
+            <div class="avatar avatar-lg mx-auto mb-3"></div>
+            <h1 class="h4 mb-1">Display name</h1>
+            <p class="text-secondary mb-3">@username</p>
+            <p>Short bio: what this developer works on.</p>
+
+            <div class="d-flex flex-wrap justify-content-center gap-2 mb-3">
+              <span class="badge text-bg-secondary">javascript</span>
+              <span class="badge text-bg-secondary">react</span>
+                <span class="badge text-bg-secondary">nodejs</span>
+            </div>
+
+            <div class="row text-center mb-3">
+              <div class="col">
+                <div class="stat-value">12</div>
+                <small class="text-secondary">Posts</small>
+              </div>
+              <div class="col">
+                <div class="stat-value">42</div>
+                <small class="text-secondary">Followers</small>
+              </div>
+              <div class="col">
+                <div class="stat-value">28</div>
+                <small class="text-secondary">Following</small>
+              </div>
+            </div>
+
+            <button class="btn btn-outline-secondary w-100">Edit profile</button>
+          </div>
+        </aside>
+
+        <section class="col-12 col-lg-8">
+          <ul class="nav nav-tabs mb-3" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab-posts"
+                      type="button" role="tab" aria-selected="true">Posts</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-comments"
+                      type="button" role="tab" aria-selected="false">Comments</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-about"
+                      type="button" role="tab" aria-selected="false">About</button>
+            </li>
+          </ul>
+
+          <div class="tab-content">
+            <div class="tab-pane fade show active" id="tab-posts" role="tabpanel">
+              <article class="card p-3 mb-3">
+                <h2 class="h5">Post title</h2>
+                <p class="text-secondary mb-0">Short excerpt of the post.</p>
+              </article>
+              <article class="card p-3 mb-3">
+                <h2 class="h5">Another post title</h2>
+                <p class="text-secondary mb-0">Short excerpt of the post.</p>
+                </article>
+            </div>
+
+            <div class="tab-pane fade" id="tab-comments" role="tabpanel">
+              <p class="text-secondary">Latest comments by this user.</p>
+            </div>
+
+            <div class="tab-pane fade" id="tab-about" role="tabpanel">
+              <p class="text-secondary">About the developer.</p>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </main>
+  </div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
