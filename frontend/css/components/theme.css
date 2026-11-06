@@ -19,3 +19,10 @@
   --bs-pagination-active-border-color: var(--dc-blue);
   --bs-pagination-hover-bg: var(--dc-bg);
 }
+
+.list-group {
+  --bs-list-group-bg: var(--dc-surface);
+  --bs-list-group-border-color: var(--dc-border);
+  --bs-list-group-color: var(--dc-text);
+  --bs-list-group-action-hover-bg : var(--dc-bg);
+}
