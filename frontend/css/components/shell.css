@@ -1,0 +1,50 @@
+/* Desktop: sidebar is a fixed-width column that stays in view */
+@media (min-width: 992px) {
+  .shell-sidebar {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    flex: 0 0 260px;
+    background: var(--dc-surface);
+    border-right: 1px solid var(--dc-border);
+  }
+}
+
+/* Mobile: the same sidebar slides in as a drawer */
+#sidebar {
+  --bs-offcanvas-width: 260px;
+  --bs-offcanvas-bg: var(--dc-surface);
+}
+
+.brand {
+  font-weight: 700;
+  background: var(--dc-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.nav-label {
+  font-size: .7rem;
+  letter-spacing: .08em;
+  color: var(--dc-text-muted);
+  margin: 1.25rem 0 .25rem .75rem;
+}
+
+.sidebar-link {
+  display: block;
+  padding: .45rem .75rem;
+  border-radius: .5rem;
+  color: var(--dc-text-muted);
+  text-decoration: none;
+}
+.sidebar-link:hover { color: var(--dc-text); background: rgba(255,255,255,.05); }
+.sidebar-link.active { color: var(--dc-text); background: rgba(71,123,250,.18); }
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--dc-bg);
+  border-bottom: 1px solid var(--dc-border);
+}

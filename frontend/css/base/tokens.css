@@ -1,0 +1,34 @@
+:root {
+  --dc-bg: #151923;
+  --dc-surface: #222838;
+  --dc-border: #343B4D;
+  --dc-text: #F3F5FA;
+  --dc-text-muted: #AAB3C5;
+  --dc-blue: #477BFA;
+  --dc-purple: #9457F5;
+  --dc-gradient: linear-gradient(135deg, var(--dc-blue), var(--dc-purple));
+}
+
+[data-bs-theme="dark"] {
+  --bs-body-bg: var(--dc-bg);
+  --bs-body-color: var(--dc-text);
+  --bs-secondary-color: var(--dc-text-muted);
+  --bs-border-color: var(--dc-border);
+  --bs-tertiary-bg: var(--dc-surface);
+  --bs-link-color: var(--dc-blue);
+}
+
+.card {
+  --bs-card-bg: var(--dc-surface);
+  --bs-card-border-color: var(--dc-border);
+}
+
+.btn-gradient {
+  background: var(--dc-gradient);
+  border: 0;
+  color: #fff;
+}
+.btn-gradient:hover {
+  filter: brightness(1.1);
+  color: #fff;
+}
