@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Explore - DEVCOMMON</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/base/tokens.css" rel="stylesheet">
+  <link href="../css/components/shell.css" rel="stylesheet">
+  <link href="../css/components/theme.css" rel="stylesheet">
+</head>
+<body>
+<div class="d-flex">
+
+  <!-- SIDEBAR -->
+  <aside class="shell-sidebar">
+    <div class="offcanvas-lg offcanvas-start" tabindex="-1" id="sidebar">
+      <div class="offcanvas-header">
+        <span class="brand fs-4">DEVCOMMON</span>
+        <button type="button" class="btn-close d-lg-none" data-bs-dismiss="offcanvas" data-bs-target="#sidebar"></button>
+      </div>
+      <div class="offcanvas-body flex-column">
+        <div class="nav-label">SOCIAL</div>
+        <a class="sidebar-link" href="home.html">Home</a>
+        <a class="sidebar-link" href="discuss.html">Discuss</a>
+        <a class="sidebar-link disabled" href="#" aria-disabled="true" tabindex="-1">Communities</a>
+        <a class="sidebar-link active" href="explore.html" aria-current="page">Explore</a>
+
+        <div class="nav-label">COLLABORATION</div>
+        <a class="sidebar-link disabled" href="#" aria-disabled="true" tabindex="-1">Solve</a>
+        <a class="sidebar-link disabled" href="#" aria-disabled="true" tabindex="-1">Projects</a>
+        <a class="sidebar-link disabled" href="#" aria-disabled="true" tabindex="-1">Workspace</a>
+
+        <div class="nav-label">PERSONAL</div>
+        <a class="sidebar-link disabled" href="#" aria-disabled="true" tabindex="-1">Messages</a>
+        <a class="sidebar-link" href="notifications.html">Notifications</a>
+        <a class="sidebar-link" href="profile.html">My Profile</a>
+        <a class="sidebar-link" href="settings.html">Settings</a>
+        <a class="sidebar-link" href="../index.html">Log out</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- MAIN COLUMN -->
+  <div class="flex-grow-1" style="min-width:0">
+
+    <header class="topbar d-flex align-items-center gap-2 px-3 py-2">
+      <button class="btn btn-outline-secondary d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#sidebar">Menu</button>
+      <input class="form-control" style="max-width:28rem" type="search" placeholder="Search DEVCOMMON">
+      <div class="ms-auto d-flex gap-2">
+        <a class="btn btn-outline-secondary" href="notifications.html">Alerts</a>
+        <a class="btn btn-outline-secondary" href="profile.html">Profile</a>
+        <a class="btn btn-gradient" href="home.html">New post</a>
+      </div>
+    </header>
+
+    <main class="p-4">
+      <h1 class="h3 mb-4">Explore</h1>
+
+      <section class="mb-5">
+        <h2 class="h5 mb-3">Trending tags</h2>
+        <div class="d-flex flex-wrap gap-2">
+          <a class="btn btn-sm btn-outline-secondary rounded-pill" href="discuss.html">#javascript</a>
+          <a class="btn btn-sm btn-outline-secondary rounded-pill" href="discuss.html">#css</a>
+          <a class="btn btn-sm btn-outline-secondary rounded-pill" href="discuss.html">#bootstrap</a>
+          <a class="btn btn-sm btn-outline-secondary rounded-pill" href="discuss.html">#git</a>
+          <a class="btn btn-sm btn-outline-secondary rounded-pill" href="discuss.html">#python</a>
+          <a class="btn btn-sm btn-outline-secondary rounded-pill" href="discuss.html">#sql</a>
+          <a class="btn btn-sm btn-outline-secondary rounded-pill" href="discuss.html">#accessibility</a>
+          <a class="btn btn-sm btn-outline-secondary rounded-pill" href="discuss.html">#html</a>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="h5 mb-3">Developers to follow</h2>
+        <div class="row g-4">
+
+          <div class="col-12 col-md-6 col-xl-4">
+            <div class="card h-100 p-3">
+              <div class="d-flex align-items-center gap-2 mb-3">
+                <div class="avatar"></div>
+                <div>
+                  <div class="fw-semibold">Developer one</div>
+                  <small class="text-secondary">@devone</small>
+                </div>
+              </div>
+              <p class="text-secondary">Front-end developer who writes about CSS layouts.</p>
+              <div class="d-flex flex-wrap gap-2 mb-3">
+                <span class="badge text-bg-secondary">css</span>
+                <span class="badge text-bg-secondary">html</span>
+              </div>
+              <button class="btn btn-sm btn-outline-secondary mt-auto" type="button">Follow</button>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-xl-4">
+            <div class="card h-100 p-3">
+              <div class="d-flex align-items-center gap-2 mb-3">
+                <div class="avatar"></div>
+                <div>
+                  <div class="fw-semibold">Developer two</div>
+                  <small class="text-secondary">@devtwo</small>
+                </div>
+              </div>
+              <p class="text-secondary">Builds small JavaScript tools and shares what she learns.</p>
+              <div class="d-flex flex-wrap gap-2 mb-3">
+                <span class="badge text-bg-secondary">javascript</span>
+                <span class="badge text-bg-secondary">git</span>
+              </div>
+              <button class="btn btn-sm btn-outline-secondary mt-auto" type="button">Follow</button>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-xl-4">
+            <div class="card h-100 p-3">
+              <div class="d-flex align-items-center gap-2 mb-3">
+                <div class="avatar"></div>
+                <div>
+                  <div class="fw-semibold">Developer three</div>
+                  <small class="text-secondary">@devthree</small>
+                </div>
+              </div>
+              <p class="text-secondary">Backend developer interested in databases and APIs.</p>
+              <div class="d-flex flex-wrap gap-2 mb-3">
+                <span class="badge text-bg-secondary">sql</span>
+                <span class="badge text-bg-secondary">python</span>
+              </div>
+              <button class="btn btn-sm btn-outline-secondary mt-auto" type="button">Follow</button>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-xl-4">
+            <div class="card h-100 p-3">
+              <div class="d-flex align-items-center gap-2 mb-3">
+                <div class="avatar"></div>
+                <div>
+                  <div class="fw-semibold">Developer four</div>
+                  <small class="text-secondary">@devfour</small>
+                </div>
+              </div>
+              <p class="text-secondary">Accessibility advocate who reviews interfaces with a keyboard.</p>
+              <div class="d-flex flex-wrap gap-2 mb-3">
+                <span class="badge text-bg-secondary">accessibility</span>
+                <span class="badge text-bg-secondary">html</span>
+              </div>
+              <button class="btn btn-sm btn-outline-secondary mt-auto" type="button">Follow</button>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-xl-4">
+            <div class="card h-100 p-3">
+              <div class="d-flex align-items-center gap-2 mb-3">
+                <div class="avatar"></div>
+                <div>
+                  <div class="fw-semibold">Developer five</div>
+                  <small class="text-secondary">@devfive</small>
+                </div>
+              </div>
+              <p class="text-secondary">Bootstrap enthusiast who builds responsive layouts quickly.</p>
+              <div class="d-flex flex-wrap gap-2 mb-3">
+                <span class="badge text-bg-secondary">bootstrap</span>
+                <span class="badge text-bg-secondary">css</span>
+              </div>
+              <button class="btn btn-sm btn-outline-secondary mt-auto" type="button">Follow</button>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-xl-4">
+            <div class="card h-100 p-3">
+              <div class="d-flex align-items-center gap-2 mb-3">
+                <div class="avatar"></div>
+                <div>
+                  <div class="fw-semibold">Developer six</div>
+                  <small class="text-secondary">@devsix</small>
+                </div>
+              </div>
+              <p class="text-secondary">Full-stack student documenting a first big project.</p>
+              <div class="d-flex flex-wrap gap-2 mb-3">
+                <span class="badge text-bg-secondary">javascript</span>
+                <span class="badge text-bg-secondary">sql</span>
+              </div>
+              <button class="btn btn-sm btn-outline-secondary mt-auto" type="button">Follow</button>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </main>
+  </div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
